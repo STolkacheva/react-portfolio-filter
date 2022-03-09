@@ -1,0 +1,57 @@
+h1, p {
+  font-family: Lato;
+}
+
+.portfolio {
+  margin: auto;
+  width: 940px;
+}
+
+.toolbar {
+  display: flex;
+  color: grey;
+  font-size: 14px;
+  padding: 0;
+}
+
+.toolbar-item {
+  list-style-type: none;
+  
+  margin: 0 2px;
+  padding: 5px 12px;
+  border: 2px solid grey;
+}
+
+.toolbar-item:last-child {
+  margin-right: 0;
+}
+
+.toolbar-item:hover {
+  opacity: 0.5;
+}
+
+.selected {
+  background-color: grey;
+  color: white;
+}
+
+.projectlist {
+  margin: auto;
+  align-items: center;
+  column-count: 3;
+}
+
+.projectlist-item {
+  box-sizing: border-box;
+  width: 300px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 610px) and (max-width: 1024px) {
+  .portfolio {
+    width: 620px;
+  }
+  .projectlist {
+    column-count: 2;
+  }
+}
